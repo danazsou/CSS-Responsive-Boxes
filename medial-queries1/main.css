@@ -1,3 +1,35 @@
 body {
-  background: blanchedalmond;
+  background: rgb(255, 186, 118);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
+
+
+.container {
+  padding: 2em;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 2em;
+}
+.container > div {
+  flex-grow: 1;
+  border: 1px solid rgb(246, 242, 242);
+  background-color: rgb(238 115 115);
+  border-radius: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b {
+  flex-grow: 4;
+}
+div.b {
+  flex-grow: 4;
+
+}
+
+
