@@ -4,16 +4,15 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  font-size: 32px;
 }
-
 
 .container {
   padding: 2em;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
 }
 .container > div {
   flex-grow: 1;
@@ -25,11 +24,20 @@ body {
   align-items: center;
 }
 .b {
-  flex-grow: 4;
+  flex-grow: 1;
 }
 div.b {
-  flex-grow: 4;
+  flex-grow: 2;
+}
 
+@media (min-width:600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  div .a {
+    flex: 1 1 100%;
+  }
 }
 
 
